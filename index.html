@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>404</title>
+    <style>
+        --root {
+            --white: #fff;
+            --gray: #333;
+        }
+
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            height: 100%;
+            font-family: Space Mono, monospace;
+            color: var(--gray);
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 5rem;
+            height: 100vh;
+            padding: 0 1rem;
+        }
+
+        section>img {
+            width: 540px;
+            height: auto
+        }
+
+        #content {
+            max-width: 530px;
+        }
+
+        header {
+            font-size: 2rem;
+        }
+
+        button {
+            border: none;
+            padding: 1rem 2rem;
+            color: #fff;
+            background-color: black;
+        }
+
+        @media (max-width: 850px) {
+
+            main {
+                gap:1rem;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+
+            section>img {
+                width: 375px;
+            }
+
+
+            section>img {
+                max-height: 300px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <img src="./scarecrow.png" alt="disoriented scarecrow" />
+        </section>
+        <section id="content">
+            <header>
+                <h1>I have bad news for you</h1>
+            </header>
+            <section>
+                <p>
+                    The page you are looking for might be removed or is temporarily unavailable</p>
+                </p>
+            </section>
+            <footer>
+                <button>Back to homepage</button>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
